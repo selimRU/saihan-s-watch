@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Saihan's Digital Watch</title>
+    <style>
+        section {
+            max-width: 1000px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #clock {
+            font-size: 150px;
+            background-color: darkgrey;
+            color: aqua;
+            font-weight: 600;
+            text-align: center;
+            border: 2px solid aqua;
+            border-radius: 20px;
+        }
+
+        .saihan {
+            text-align: center;
+            font-family: 'Yellowtail', cursive;
+            font-weight: 400;
+            font-size: 60px;
+            color: rgb(224, 31, 31);
+        }
+        img{
+                width: 20%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        @media screen and (max-width: 576px) {
+            #clock {
+                font-size: 70px;
+                background-color: darkgrey;
+                width: 300px;
+                color: aqua;
+                font-weight: 600;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                border: 2px solid aqua;
+                border-radius: 20px;
+            }
+
+            .saihan {
+                font-weight: 300;
+                text-align: center;
+                font-size: 50px;
+
+            }
+
+            img{
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="saihan-pic">
+            <img src="./saihan.png" alt="">
+        </div>
+        <h3 class="saihan">Saihan's Digital Watch</h3>
+        <div id="clock"></div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
